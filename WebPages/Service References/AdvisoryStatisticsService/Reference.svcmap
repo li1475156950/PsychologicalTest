@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="f8997124-6772-46b2-bba5-4dd55c50d55d" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies>
+      <ReferencedAssembly AssemblyName="System" />
+      <ReferencedAssembly AssemblyName="System.ComponentModel.DataAnnotations" />
+      <ReferencedAssembly AssemblyName="System.Configuration" />
+      <ReferencedAssembly AssemblyName="System.Core" />
+      <ReferencedAssembly AssemblyName="System.Data" />
+      <ReferencedAssembly AssemblyName="System.Data.DataSetExtensions" />
+      <ReferencedAssembly AssemblyName="System.Drawing" />
+      <ReferencedAssembly AssemblyName="System.EnterpriseServices" />
+      <ReferencedAssembly AssemblyName="System.IdentityModel" />
+      <ReferencedAssembly AssemblyName="System.Runtime.Serialization" />
+      <ReferencedAssembly AssemblyName="System.ServiceModel" />
+      <ReferencedAssembly AssemblyName="System.ServiceModel.Channels" />
+      <ReferencedAssembly AssemblyName="System.Web" />
+      <ReferencedAssembly AssemblyName="System.Web.ApplicationServices" />
+      <ReferencedAssembly AssemblyName="System.Web.DynamicData" />
+      <ReferencedAssembly AssemblyName="System.Web.Entity" />
+      <ReferencedAssembly AssemblyName="System.Web.Extensions" />
+      <ReferencedAssembly AssemblyName="System.Web.Services" />
+      <ReferencedAssembly AssemblyName="System.Xml" />
+      <ReferencedAssembly AssemblyName="System.Xml.Linq" />
+    </ReferencedAssemblies>
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8012/BasicsServices/AdvisoryStatisticsService/" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="item5.xsd" MetadataType="Schema" ID="661d4760-c66c-42c1-92ee-1f854686a7c5" SourceId="1" SourceUrl="http://localhost:8012/BasicsServices/AdvisoryStatisticsService/?xsd=xsd4" />
+    <MetadataFile FileName="item51.xsd" MetadataType="Schema" ID="c50c0a26-a676-46a2-a66c-d0ec2f64be5e" SourceId="1" SourceUrl="http://localhost:8012/BasicsServices/AdvisoryStatisticsService/?xsd=xsd1" />
+    <MetadataFile FileName="item52.xsd" MetadataType="Schema" ID="647cd387-8962-4a30-9e8a-182552508529" SourceId="1" SourceUrl="http://localhost:8012/BasicsServices/AdvisoryStatisticsService/?xsd=xsd2" />
+    <MetadataFile FileName="AdvisoryStatisticsService1.wsdl" MetadataType="Wsdl" ID="8e66d86d-01d1-4e81-b139-f19b69b38f27" SourceId="1" SourceUrl="http://localhost:8012/BasicsServices/AdvisoryStatisticsService/?wsdl" />
+    <MetadataFile FileName="item1.disco" MetadataType="Disco" ID="161869dd-fde2-4ed1-9cae-3a870a567b9b" SourceId="1" SourceUrl="http://localhost:8012/BasicsServices/AdvisoryStatisticsService/?disco" />
+    <MetadataFile FileName="item53.xsd" MetadataType="Schema" ID="f2c56980-0c4b-41e3-b005-f5a91f45c1be" SourceId="1" SourceUrl="http://localhost:8012/BasicsServices/AdvisoryStatisticsService/?xsd=xsd0" />
+    <MetadataFile FileName="item54.xsd" MetadataType="Schema" ID="c8bc968c-84e3-48b8-a00c-c0cf13e27530" SourceId="1" SourceUrl="http://localhost:8012/BasicsServices/AdvisoryStatisticsService/?xsd=xsd3" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

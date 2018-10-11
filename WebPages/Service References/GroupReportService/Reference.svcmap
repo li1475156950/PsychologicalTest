@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="b7a4d9aa-93eb-43d0-ac11-077cd36f0484" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies>
+      <ReferencedAssembly AssemblyName="System" />
+      <ReferencedAssembly AssemblyName="System.ComponentModel.DataAnnotations" />
+      <ReferencedAssembly AssemblyName="System.Configuration" />
+      <ReferencedAssembly AssemblyName="System.Core" />
+      <ReferencedAssembly AssemblyName="System.Data" />
+      <ReferencedAssembly AssemblyName="System.Data.DataSetExtensions" />
+      <ReferencedAssembly AssemblyName="System.Drawing" />
+      <ReferencedAssembly AssemblyName="System.EnterpriseServices" />
+      <ReferencedAssembly AssemblyName="System.IdentityModel" />
+      <ReferencedAssembly AssemblyName="System.Runtime.Serialization" />
+      <ReferencedAssembly AssemblyName="System.ServiceModel" />
+      <ReferencedAssembly AssemblyName="System.ServiceModel.Channels" />
+      <ReferencedAssembly AssemblyName="System.Web" />
+      <ReferencedAssembly AssemblyName="System.Web.ApplicationServices" />
+      <ReferencedAssembly AssemblyName="System.Web.DynamicData" />
+      <ReferencedAssembly AssemblyName="System.Web.Entity" />
+      <ReferencedAssembly AssemblyName="System.Web.Extensions" />
+      <ReferencedAssembly AssemblyName="System.Web.Services" />
+      <ReferencedAssembly AssemblyName="System.Xml" />
+      <ReferencedAssembly AssemblyName="System.Xml.Linq" />
+    </ReferencedAssemblies>
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8012/BasicsServices/GroupReportService/" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="item.disco" MetadataType="Disco" ID="4fdd02c0-50b8-482f-aa78-12dcebc7407f" SourceId="1" SourceUrl="http://localhost:8012/BasicsServices/GroupReportService/?disco" />
+    <MetadataFile FileName="item7.xsd" MetadataType="Schema" ID="d8137af8-55b4-4d19-a97d-33649c9d5ae9" SourceId="1" SourceUrl="http://localhost:8012/BasicsServices/GroupReportService/?xsd=xsd4" />
+    <MetadataFile FileName="GroupReportService.wsdl" MetadataType="Wsdl" ID="4cc5299a-7481-4a9c-9728-a369368b7e51" SourceId="1" SourceUrl="http://localhost:8012/BasicsServices/GroupReportService/?wsdl" />
+    <MetadataFile FileName="item71.xsd" MetadataType="Schema" ID="df06b7c2-4a75-45a2-af2b-8f2f4b4a0b0f" SourceId="1" SourceUrl="http://localhost:8012/BasicsServices/GroupReportService/?xsd=xsd1" />
+    <MetadataFile FileName="item72.xsd" MetadataType="Schema" ID="acea8552-90d0-4a5d-88e8-1958ca34fb1d" SourceId="1" SourceUrl="http://localhost:8012/BasicsServices/GroupReportService/?xsd=xsd0" />
+    <MetadataFile FileName="item73.xsd" MetadataType="Schema" ID="60b16b48-621c-4062-9046-1051a48eb64b" SourceId="1" SourceUrl="http://localhost:8012/BasicsServices/GroupReportService/?xsd=xsd3" />
+    <MetadataFile FileName="item74.xsd" MetadataType="Schema" ID="a4d12efc-3162-40a7-8cfa-98e9011efa3d" SourceId="1" SourceUrl="http://localhost:8012/BasicsServices/GroupReportService/?xsd=xsd5" />
+    <MetadataFile FileName="item75.xsd" MetadataType="Schema" ID="6bedfcb3-8bc0-4028-8059-e5af2bf2fcf0" SourceId="1" SourceUrl="http://localhost:8012/BasicsServices/GroupReportService/?xsd=xsd6" />
+    <MetadataFile FileName="item76.xsd" MetadataType="Schema" ID="e9d47900-7b65-4cd7-a2c3-dfcf20d537d3" SourceId="1" SourceUrl="http://localhost:8012/BasicsServices/GroupReportService/?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

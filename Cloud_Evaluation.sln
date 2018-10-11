@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebPages", "WebPages\WebPages.csproj", "{C0260274-5798-4069-8487-11659697D2EA}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://win-tq9pfu6iekn:8080/tfs/%E5%BF%83%E7%90%86%E6%B5%8B%E8%AF%84%E4%BA%91%E5%B9%B3%E5%8F%B0
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = WebPages\\WebPages.csproj
+		SccProjectName1 = WebPages
+		SccLocalPath1 = WebPages
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C0260274-5798-4069-8487-11659697D2EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0260274-5798-4069-8487-11659697D2EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0260274-5798-4069-8487-11659697D2EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0260274-5798-4069-8487-11659697D2EA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

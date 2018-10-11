@@ -1,0 +1,854 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:8012/BasicsServices/GroupReportService/?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:import schemaLocation="http://localhost:8012/BasicsServices/GroupReportService/?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/BasicsServiceMODEL.GroupReportModel" />
+  <xs:import schemaLocation="http://localhost:8012/BasicsServices/GroupReportService/?xsd=xsd6" namespace="http://schemas.datacontract.org/2004/07/EntieyBLL" />
+  <xs:element name="AddGroupReport">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ansIDList" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="reportName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="amountCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="userIDList" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="createPerson" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddGroupReportResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AddGroupReportResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InitiGroupReportTable">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userID" type="xs:int" />
+        <xs:element minOccurs="0" name="reportName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="startDate" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="endDate" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="startPageIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="endPageIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="enterpriseCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InitiGroupReportTableResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InitiGroupReportTableResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteGroupReport">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="grID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteGroupReportResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteGroupReportResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetReportTitle">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="grID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetReportTitleResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetReportTitleResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAmountIntroduce">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="grID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAmountIntroduceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetAmountIntroduceResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserIDListAndAmountCode">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="grID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserIDListAndAmountCodeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetUserIDListAndAmountCodeResult" nillable="true" type="q1:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAnswerAddRecord">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="uID" type="xs:int" />
+        <xs:element minOccurs="0" name="ansID" type="xs:int" />
+        <xs:element minOccurs="0" name="amountCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAnswerAddRecordResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetAnswerAddRecordResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAnswerAddRecordByAnsIDList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="enterpriseCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AnsIDList" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAnswerAddRecordByAnsIDListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetAnswerAddRecordByAnsIDListResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataTable" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+              <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDimensionByAmountCode">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="amountCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDimensionByAmountCodeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetDimensionByAmountCodeResult" nillable="true" type="q2:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDimensionByAmountCode_Name">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="amountCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDimensionByAmountCode_NameResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetDimensionByAmountCode_NameResult" nillable="true" type="q3:ArrayOfKeyValueOfstringstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetNormExplainByDimensionCode">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="dimensionCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetNormExplainByDimensionCodeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetNormExplainByDimensionCodeResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetNormExplainByDimensionCodeList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="dimensionCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetNormExplainByDimensionCodeListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetNormExplainByDimensionCodeListResult" nillable="true" type="q4:ArrayOfKeyValueOfstringstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSubjectCodeByDimensionCode">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="dimensionCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSubjectCodeByDimensionCodeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetSubjectCodeByDimensionCodeResult" nillable="true" type="q5:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSubjectCodeByDimensionCodeList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="dimensionCodeList" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSubjectCodeByDimensionCodeListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetSubjectCodeByDimensionCodeListResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataTable" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+              <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSingleScoreBySbjCodeAndOptCode">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="optionCodeList" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSingleScoreBySbjCodeAndOptCodeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetSingleScoreBySbjCodeAndOptCodeResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetScoreTableByAmount_Code">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="amount_Code" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetScoreTableByAmount_CodeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetScoreTableByAmount_CodeResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataTable" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+              <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetScoreModel">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="dimensionCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetScoreModelResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetScoreModelResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFormulaStrByDimensionCode">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="dimensionCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFormulaStrByDimensionCodeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetFormulaStrByDimensionCodeResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFormulaStrByDimensionCodeList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="dimensionCodeList" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFormulaStrByDimensionCodeListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetFormulaStrByDimensionCodeListResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataTable" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+              <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDimensionName">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="dimensionCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDimensionNameResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetDimensionNameResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NormCodeByDimensionCode">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="dimensionCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NormCodeByDimensionCodeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="NormCodeByDimensionCodeResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NormCodeByDimensionCodeList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="dimensionCodeList" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NormCodeByDimensionCodeListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="NormCodeByDimensionCodeListResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataTable" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+              <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetExplainScoreByNormCodeTable">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="normCodeList" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetExplainScoreByNormCodeTableResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetExplainScoreByNormCodeTableResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataTable" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+              <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetExplainScoreByNormCode">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="normCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetExplainScoreByNormCodeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/BasicsServiceMODEL.GroupReportModel" minOccurs="0" name="GetExplainScoreByNormCodeResult" nillable="true" type="q6:ArrayOfExplainModel" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetNormWarningByNormCode">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="normCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetNormWarningByNormCodeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/BasicsServiceMODEL.GroupReportModel" minOccurs="0" name="GetNormWarningByNormCodeResult" nillable="true" type="q7:ArrayOfNormWarningModel" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetNormWarningByNormCodeList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="normCodeList" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetNormWarningByNormCodeListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetNormWarningByNormCodeListResult" nillable="true" type="q8:ArrayOfKeyValueOfstringArrayOfNormWarningModelF4iwRAgY" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAnswerCreateTimeByUID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="uID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAnswerCreateTimeByUIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetAnswerCreateTimeByUIDResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAnswerCreateTimeByUIDList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="uID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAnswerCreateTimeByUIDListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetAnswerCreateTimeByUIDListResult" nillable="true" type="q9:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetGroupReportCreateTime">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="grID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetGroupReportCreateTimeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetGroupReportCreateTimeResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetReportByReportName">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="reportName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="enterpriseCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetReportByReportNameResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetReportByReportNameResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetScoreByAnswerID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="answerID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetScoreByAnswerIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetScoreByAnswerIDResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GroupReportFunction">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="grIDs" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GroupReportFunctionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GroupReportFunctionResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InitiAverageStateTable">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="grID" type="xs:int" />
+        <xs:element minOccurs="0" name="enterpriseCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InitiAverageStateTableResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/EntieyBLL" minOccurs="0" name="InitiAverageStateTableResult" nillable="true" type="q10:ArrayOfGroupReport.Clinical" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetChildrenSolitudeScore">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="grID" type="xs:int" />
+        <xs:element minOccurs="0" name="enterpriseCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetChildrenSolitudeScoreResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/EntieyBLL" minOccurs="0" name="GetChildrenSolitudeScoreResult" nillable="true" type="q11:ArrayOfGroupReport.UserDimensionScoreModelOfstringRvdAXEcW" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetScoreList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="grID" type="xs:int" />
+        <xs:element minOccurs="0" name="enterpriseCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetScoreListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetScoreListResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InitiClinicalAverageStateTable">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="grID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InitiClinicalAverageStateTableResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/EntieyBLL" minOccurs="0" name="InitiClinicalAverageStateTableResult" nillable="true" type="q12:ArrayOfGroupReport.Clinical" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetClinicalScore">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="grID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetClinicalScoreResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/EntieyBLL" minOccurs="0" name="GetClinicalScoreResult" nillable="true" type="q13:ArrayOfGroupReport.UserDimensionScoreModelOfdecimalRvdAXEcW" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetClinicalData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="grID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetClinicalDataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetClinicalDataResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUsersDefenseScore">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="grID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUsersDefenseScoreResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/EntieyBLL" minOccurs="0" name="GetUsersDefenseScoreResult" nillable="true" type="q14:ArrayOfGroupReport.UserDimensionScoreModelInt" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUsersLifeScore">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="grID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUsersLifeScoreResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/EntieyBLL" minOccurs="0" name="GetUsersLifeScoreResult" nillable="true" type="q15:ArrayOfGroupReport.UserDimensionScoreModelOfdecimalRvdAXEcW" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InitiLifeAverageStateTable">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="grID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InitiLifeAverageStateTableResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/EntieyBLL" minOccurs="0" name="InitiLifeAverageStateTableResult" nillable="true" type="q16:ArrayOfGroupReport.Clinical" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LoadLifeBasicInfo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="grID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LoadLifeBasicInfoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="LoadLifeBasicInfoResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUsersInnerAgeScore">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="grID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUsersInnerAgeScoreResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/EntieyBLL" minOccurs="0" name="GetUsersInnerAgeScoreResult" nillable="true" type="q17:ArrayOfGroupReport.UserDimensionScoreModelOfdecimalRvdAXEcW" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InitiInnerAgeTable">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="grid" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InitiInnerAgeTableResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/EntieyBLL" minOccurs="0" name="InitiInnerAgeTableResult" nillable="true" type="q18:ArrayOfGroupReport.Clinical" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBeforeKindergartenScore">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="grID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBeforeKindergartenScoreResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/EntieyBLL" minOccurs="0" name="GetBeforeKindergartenScoreResult" nillable="true" type="q19:ArrayOfGroupReport.UserDimensionScoreModelOfdecimalRvdAXEcW" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InitiBeforeKinderTable">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="grID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InitiBeforeKinderTableResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/EntieyBLL" minOccurs="0" name="InitiBeforeKinderTableResult" nillable="true" type="q20:ArrayOfGroupReport.Clinical" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBeforeKinderScoreList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="grID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBeforeKinderScoreListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q21="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetBeforeKinderScoreListResult" nillable="true" type="q21:ArrayOfdecimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRutterChildrensDimensionScore">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="grID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRutterChildrensDimensionScoreResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/EntieyBLL" minOccurs="0" name="GetRutterChildrensDimensionScoreResult" nillable="true" type="q22:ArrayOfGroupReport.UserDimensionScoreModelOfdecimalRvdAXEcW" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUsersCommDimensionScore">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="grID" type="xs:int" />
+        <xs:element minOccurs="0" name="enterpriseCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUsersCommDimensionScoreResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/EntieyBLL" minOccurs="0" name="GetUsersCommDimensionScoreResult" nillable="true" type="q23:ArrayOfGroupReport.UserDimensionScoreModelOfstringRvdAXEcW" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="dimensionName">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="grID" type="xs:int" />
+        <xs:element minOccurs="0" name="enterpriseCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="dimensionNameResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q24="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="dimensionNameResult" nillable="true" type="q24:ArrayOfKeyValueOfstringstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InitiCommAverageStateTable">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="grID" type="xs:int" />
+        <xs:element minOccurs="0" name="enterpriseCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InitiCommAverageStateTableResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q25="http://schemas.datacontract.org/2004/07/EntieyBLL" minOccurs="0" name="InitiCommAverageStateTableResult" nillable="true" type="q25:ArrayOfGroupReport.Clinical" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InitialCommSpread">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="grID" type="xs:int" />
+        <xs:element minOccurs="0" name="enterpriseCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InitialCommSpreadResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InitialCommSpreadResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCommRateData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="grID" type="xs:int" />
+        <xs:element minOccurs="0" name="enterpriseCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCommRateDataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q26="http://schemas.datacontract.org/2004/07/EntieyBLL" minOccurs="0" name="GetCommRateDataResult" nillable="true" type="q26:ArrayOfGroupReport.RateChartData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

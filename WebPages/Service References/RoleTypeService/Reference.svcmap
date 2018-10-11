@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="75d57123-4e5a-4379-8687-58a4124e76a4" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8012/BasicsServices/RoleTypeService/" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="item3.xsd" MetadataType="Schema" ID="9190b70b-6e9c-47ea-8739-5d54d56b0d04" SourceId="1" SourceUrl="http://localhost:8012/BasicsServices/RoleTypeService/?xsd=xsd2" />
+    <MetadataFile FileName="item1.disco" MetadataType="Disco" ID="ded78ef2-d423-42c6-a1f7-3b9b503276d6" SourceId="1" SourceUrl="http://localhost:8012/BasicsServices/RoleTypeService/?disco" />
+    <MetadataFile FileName="item31.xsd" MetadataType="Schema" ID="f4b29676-a3e6-4ee3-a326-ff63263d9e5c" SourceId="1" SourceUrl="http://localhost:8012/BasicsServices/RoleTypeService/?xsd=xsd0" />
+    <MetadataFile FileName="RoleTypeService1.wsdl" MetadataType="Wsdl" ID="b026afe3-4fa9-4a4b-a76a-ccf01bf3e43a" SourceId="1" SourceUrl="http://localhost:8012/BasicsServices/RoleTypeService/?wsdl" />
+    <MetadataFile FileName="item32.xsd" MetadataType="Schema" ID="c9b4564c-eadb-4ace-a021-4953fbd50d81" SourceId="1" SourceUrl="http://localhost:8012/BasicsServices/RoleTypeService/?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

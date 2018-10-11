@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="28eceef5-87d5-4c59-8b5a-57479f684126" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies>
+      <ReferencedAssembly AssemblyName="System" />
+      <ReferencedAssembly AssemblyName="System.ComponentModel.DataAnnotations" />
+      <ReferencedAssembly AssemblyName="System.Configuration" />
+      <ReferencedAssembly AssemblyName="System.Core" />
+      <ReferencedAssembly AssemblyName="System.Data" />
+      <ReferencedAssembly AssemblyName="System.Data.DataSetExtensions" />
+      <ReferencedAssembly AssemblyName="System.Drawing" />
+      <ReferencedAssembly AssemblyName="System.EnterpriseServices" />
+      <ReferencedAssembly AssemblyName="System.IdentityModel" />
+      <ReferencedAssembly AssemblyName="System.Runtime.Serialization" />
+      <ReferencedAssembly AssemblyName="System.ServiceModel" />
+      <ReferencedAssembly AssemblyName="System.ServiceModel.Channels" />
+      <ReferencedAssembly AssemblyName="System.Web" />
+      <ReferencedAssembly AssemblyName="System.Web.ApplicationServices" />
+      <ReferencedAssembly AssemblyName="System.Web.DynamicData" />
+      <ReferencedAssembly AssemblyName="System.Web.Entity" />
+      <ReferencedAssembly AssemblyName="System.Web.Extensions" />
+      <ReferencedAssembly AssemblyName="System.Web.Services" />
+      <ReferencedAssembly AssemblyName="System.Xml" />
+      <ReferencedAssembly AssemblyName="System.Xml.Linq" />
+    </ReferencedAssemblies>
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8012/BasicsServices/AnswerStatusService/" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="item3.xsd" MetadataType="Schema" ID="ffaeba8d-1823-43bd-ad60-047f52b503b6" SourceId="1" SourceUrl="http://localhost:8012/BasicsServices/AnswerStatusService/?xsd=xsd2" />
+    <MetadataFile FileName="item1.disco" MetadataType="Disco" ID="0159f591-989d-4357-98ce-771e1c7c40d6" SourceId="1" SourceUrl="http://localhost:8012/BasicsServices/AnswerStatusService/?disco" />
+    <MetadataFile FileName="item31.xsd" MetadataType="Schema" ID="74766164-8b89-4d2c-aaee-03e56773cb4d" SourceId="1" SourceUrl="http://localhost:8012/BasicsServices/AnswerStatusService/?xsd=xsd0" />
+    <MetadataFile FileName="AnswerStatusService1.wsdl" MetadataType="Wsdl" ID="fdfedd8c-7032-42c2-a673-0aa1b160e365" SourceId="1" SourceUrl="http://localhost:8012/BasicsServices/AnswerStatusService/?wsdl" />
+    <MetadataFile FileName="item32.xsd" MetadataType="Schema" ID="50fe3b3f-db74-4956-8819-a9466917eaad" SourceId="1" SourceUrl="http://localhost:8012/BasicsServices/AnswerStatusService/?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

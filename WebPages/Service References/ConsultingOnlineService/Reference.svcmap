@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="5242befb-4016-4663-a6d1-3d17a7c7419d" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies>
+      <ReferencedAssembly AssemblyName="System" />
+      <ReferencedAssembly AssemblyName="System.ComponentModel.DataAnnotations" />
+      <ReferencedAssembly AssemblyName="System.Configuration" />
+      <ReferencedAssembly AssemblyName="System.Core" />
+      <ReferencedAssembly AssemblyName="System.Data" />
+      <ReferencedAssembly AssemblyName="System.Data.DataSetExtensions" />
+      <ReferencedAssembly AssemblyName="System.Drawing" />
+      <ReferencedAssembly AssemblyName="System.EnterpriseServices" />
+      <ReferencedAssembly AssemblyName="System.IdentityModel" />
+      <ReferencedAssembly AssemblyName="System.Runtime.Serialization" />
+      <ReferencedAssembly AssemblyName="System.ServiceModel" />
+      <ReferencedAssembly AssemblyName="System.ServiceModel.Channels" />
+      <ReferencedAssembly AssemblyName="System.Web" />
+      <ReferencedAssembly AssemblyName="System.Web.ApplicationServices" />
+      <ReferencedAssembly AssemblyName="System.Web.DynamicData" />
+      <ReferencedAssembly AssemblyName="System.Web.Entity" />
+      <ReferencedAssembly AssemblyName="System.Web.Extensions" />
+      <ReferencedAssembly AssemblyName="System.Web.Services" />
+      <ReferencedAssembly AssemblyName="System.Xml" />
+      <ReferencedAssembly AssemblyName="System.Xml.Linq" />
+    </ReferencedAssemblies>
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8012/BasicsServices/ConsultingOnlineService/" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="item4.xsd" MetadataType="Schema" ID="dd73e0db-0dc7-4879-a409-aea8dcf460a7" SourceId="1" SourceUrl="http://localhost:8012/BasicsServices/ConsultingOnlineService/?xsd=xsd0" />
+    <MetadataFile FileName="item41.xsd" MetadataType="Schema" ID="508a28d8-ea00-4369-a794-e47240348068" SourceId="1" SourceUrl="http://localhost:8012/BasicsServices/ConsultingOnlineService/?xsd=xsd1" />
+    <MetadataFile FileName="item42.xsd" MetadataType="Schema" ID="d372315c-d248-4643-a660-5fb76ced833d" SourceId="1" SourceUrl="http://localhost:8012/BasicsServices/ConsultingOnlineService/?xsd=xsd2" />
+    <MetadataFile FileName="item43.xsd" MetadataType="Schema" ID="eea10169-9c15-4b53-9d87-c7ed592c85cd" SourceId="1" SourceUrl="http://localhost:8012/BasicsServices/ConsultingOnlineService/?xsd=xsd3" />
+    <MetadataFile FileName="item1.disco" MetadataType="Disco" ID="a4707079-b8e3-4d50-a239-1ef8a84fa2cf" SourceId="1" SourceUrl="http://localhost:8012/BasicsServices/ConsultingOnlineService/?disco" />
+    <MetadataFile FileName="ConsultingOnlineService1.wsdl" MetadataType="Wsdl" ID="2a0a5fc2-52a9-4747-ae3e-7373f8444564" SourceId="1" SourceUrl="http://localhost:8012/BasicsServices/ConsultingOnlineService/?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

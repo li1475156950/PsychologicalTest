@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="e939502f-cc5b-493b-bc2d-1bef0c76197d" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8012/BasicsServices/SystemSettingService/" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="SystemSettingService1.wsdl" MetadataType="Wsdl" ID="4b815026-2eee-4dfb-bb7e-4c83edb8ed18" SourceId="1" SourceUrl="http://localhost:8012/BasicsServices/SystemSettingService/?wsdl" />
+    <MetadataFile FileName="item3.xsd" MetadataType="Schema" ID="0076c7a4-78d6-4283-8b0d-eb8bfdfd9257" SourceId="1" SourceUrl="http://localhost:8012/BasicsServices/SystemSettingService/?xsd=xsd0" />
+    <MetadataFile FileName="item31.xsd" MetadataType="Schema" ID="05a187c7-637a-45ae-a80c-0e8c7f9761a7" SourceId="1" SourceUrl="http://localhost:8012/BasicsServices/SystemSettingService/?xsd=xsd2" />
+    <MetadataFile FileName="item1.disco" MetadataType="Disco" ID="d1215e1b-b035-45ca-a0a6-109ba331f13b" SourceId="1" SourceUrl="http://localhost:8012/BasicsServices/SystemSettingService/?disco" />
+    <MetadataFile FileName="item32.xsd" MetadataType="Schema" ID="23bc8a28-8250-4916-8b81-4494d7d3713c" SourceId="1" SourceUrl="http://localhost:8012/BasicsServices/SystemSettingService/?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

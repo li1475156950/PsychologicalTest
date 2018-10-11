@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/EntieyBLL" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/EntieyBLL" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:8012/BasicsServices/GroupReportService/?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:complexType name="ArrayOfGroupReport.Clinical">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="GroupReport.Clinical" nillable="true" type="tns:GroupReport.Clinical" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfGroupReport.Clinical" nillable="true" type="tns:ArrayOfGroupReport.Clinical" />
+  <xs:complexType name="GroupReport.Clinical">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CKey" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Cavg" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Cmax" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Cmin" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Cname" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Difference" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GroupReport.Clinical" nillable="true" type="tns:GroupReport.Clinical" />
+  <xs:complexType name="ArrayOfGroupReport.UserDimensionScoreModelOfstringRvdAXEcW">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="GroupReport.UserDimensionScoreModelOfstringRvdAXEcW" nillable="true" type="tns:GroupReport.UserDimensionScoreModelOfstringRvdAXEcW" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfGroupReport.UserDimensionScoreModelOfstringRvdAXEcW" nillable="true" type="tns:ArrayOfGroupReport.UserDimensionScoreModelOfstringRvdAXEcW" />
+  <xs:complexType name="GroupReport.UserDimensionScoreModelOfstringRvdAXEcW">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="GroupReport.UserDimensionScoreModelOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/EntieyBLL" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="string" Namespace="http://www.w3.org/2001/XMLSchema" NestedLevel="1" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="DimensionAndScore" nillable="true" type="q1:ArrayOfKeyValueOfstringstring" />
+      <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="DimensionName" nillable="true" type="q2:ArrayOfKeyValueOfstringstring" />
+      <xs:element minOccurs="0" name="MaxScoreOptionCount" type="xs:int" />
+      <xs:element minOccurs="0" name="UserAge" type="xs:double" />
+      <xs:element minOccurs="0" name="UserID" type="xs:int" />
+      <xs:element minOccurs="0" name="UserSex" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GroupReport.UserDimensionScoreModelOfstringRvdAXEcW" nillable="true" type="tns:GroupReport.UserDimensionScoreModelOfstringRvdAXEcW" />
+  <xs:complexType name="ArrayOfGroupReport.UserDimensionScoreModelOfdecimalRvdAXEcW">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="GroupReport.UserDimensionScoreModelOfdecimalRvdAXEcW" nillable="true" type="tns:GroupReport.UserDimensionScoreModelOfdecimalRvdAXEcW" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfGroupReport.UserDimensionScoreModelOfdecimalRvdAXEcW" nillable="true" type="tns:ArrayOfGroupReport.UserDimensionScoreModelOfdecimalRvdAXEcW" />
+  <xs:complexType name="GroupReport.UserDimensionScoreModelOfdecimalRvdAXEcW">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="GroupReport.UserDimensionScoreModelOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/EntieyBLL" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="decimal" Namespace="http://www.w3.org/2001/XMLSchema" NestedLevel="1" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q3="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="DimensionAndScore" nillable="true" type="q3:ArrayOfKeyValueOfstringdecimal" />
+      <xs:element xmlns:q4="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="DimensionName" nillable="true" type="q4:ArrayOfKeyValueOfstringstring" />
+      <xs:element minOccurs="0" name="MaxScoreOptionCount" type="xs:int" />
+      <xs:element minOccurs="0" name="UserAge" type="xs:double" />
+      <xs:element minOccurs="0" name="UserID" type="xs:int" />
+      <xs:element minOccurs="0" name="UserSex" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GroupReport.UserDimensionScoreModelOfdecimalRvdAXEcW" nillable="true" type="tns:GroupReport.UserDimensionScoreModelOfdecimalRvdAXEcW" />
+  <xs:complexType name="ArrayOfGroupReport.UserDimensionScoreModelInt">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="GroupReport.UserDimensionScoreModelInt" nillable="true" type="tns:GroupReport.UserDimensionScoreModelInt" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfGroupReport.UserDimensionScoreModelInt" nillable="true" type="tns:ArrayOfGroupReport.UserDimensionScoreModelInt" />
+  <xs:complexType name="GroupReport.UserDimensionScoreModelInt">
+    <xs:sequence>
+      <xs:element xmlns:q5="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ScoreList" nillable="true" type="q5:ArrayOfdecimal" />
+      <xs:element minOccurs="0" name="UserAge" type="xs:double" />
+      <xs:element minOccurs="0" name="UserID" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GroupReport.UserDimensionScoreModelInt" nillable="true" type="tns:GroupReport.UserDimensionScoreModelInt" />
+  <xs:complexType name="ArrayOfGroupReport.RateChartData">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="GroupReport.RateChartData" nillable="true" type="tns:GroupReport.RateChartData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfGroupReport.RateChartData" nillable="true" type="tns:ArrayOfGroupReport.RateChartData" />
+  <xs:complexType name="GroupReport.RateChartData">
+    <xs:sequence>
+      <xs:element xmlns:q6="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="data" nillable="true" type="q6:ArrayOfdecimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GroupReport.RateChartData" nillable="true" type="tns:GroupReport.RateChartData" />
+</xs:schema>

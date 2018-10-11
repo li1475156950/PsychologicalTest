@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/BasicsServiceMODEL.AmountModel" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/BasicsServiceMODEL.AmountModel" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="AmountDimensionEntity">
+    <xs:sequence>
+      <xs:element name="_createtime" type="xs:dateTime" />
+      <xs:element name="_dimensioncode" nillable="true" type="xs:string" />
+      <xs:element name="_dimensionid" type="xs:long" />
+      <xs:element name="_dimensionname" nillable="true" type="xs:string" />
+      <xs:element name="_is_delete" type="xs:int" />
+      <xs:element name="_scoringmode" type="xs:int" />
+      <xs:element name="_sort" type="xs:int" />
+      <xs:element name="_subjectnum" type="xs:int" />
+      <xs:element name="_u_id" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AmountDimensionEntity" nillable="true" type="tns:AmountDimensionEntity" />
+</xs:schema>

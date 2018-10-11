@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="da1e51ea-2f85-4dab-bcc5-a8448a5a2fac" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies>
+      <ReferencedAssembly AssemblyName="System" />
+      <ReferencedAssembly AssemblyName="System.ComponentModel.DataAnnotations" />
+      <ReferencedAssembly AssemblyName="System.Configuration" />
+      <ReferencedAssembly AssemblyName="System.Core" />
+      <ReferencedAssembly AssemblyName="System.Data" />
+      <ReferencedAssembly AssemblyName="System.Data.DataSetExtensions" />
+      <ReferencedAssembly AssemblyName="System.Drawing" />
+      <ReferencedAssembly AssemblyName="System.EnterpriseServices" />
+      <ReferencedAssembly AssemblyName="System.IdentityModel" />
+      <ReferencedAssembly AssemblyName="System.Runtime.Serialization" />
+      <ReferencedAssembly AssemblyName="System.ServiceModel" />
+      <ReferencedAssembly AssemblyName="System.ServiceModel.Channels" />
+      <ReferencedAssembly AssemblyName="System.Web" />
+      <ReferencedAssembly AssemblyName="System.Web.ApplicationServices" />
+      <ReferencedAssembly AssemblyName="System.Web.DynamicData" />
+      <ReferencedAssembly AssemblyName="System.Web.Entity" />
+      <ReferencedAssembly AssemblyName="System.Web.Extensions" />
+      <ReferencedAssembly AssemblyName="System.Web.Services" />
+      <ReferencedAssembly AssemblyName="System.Xml" />
+      <ReferencedAssembly AssemblyName="System.Xml.Linq" />
+    </ReferencedAssemblies>
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8012/BasicsServices/RoleService/" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="item1.disco" MetadataType="Disco" ID="7ef74f3e-7c9f-4ebb-8c98-23847d95443c" SourceId="1" SourceUrl="http://localhost:8012/BasicsServices/RoleService/?disco" />
+    <MetadataFile FileName="item4.xsd" MetadataType="Schema" ID="99f80fc2-95e5-4a06-9d71-1acbd1148824" SourceId="1" SourceUrl="http://localhost:8012/BasicsServices/RoleService/?xsd=xsd1" />
+    <MetadataFile FileName="item41.xsd" MetadataType="Schema" ID="1aaf502d-70c4-49f4-9e87-c1179921cde3" SourceId="1" SourceUrl="http://localhost:8012/BasicsServices/RoleService/?xsd=xsd0" />
+    <MetadataFile FileName="item42.xsd" MetadataType="Schema" ID="8684830a-706d-4cef-a31b-8d14122f1165" SourceId="1" SourceUrl="http://localhost:8012/BasicsServices/RoleService/?xsd=xsd3" />
+    <MetadataFile FileName="item43.xsd" MetadataType="Schema" ID="170c5417-94c6-405b-921c-6fae1d475a17" SourceId="1" SourceUrl="http://localhost:8012/BasicsServices/RoleService/?xsd=xsd2" />
+    <MetadataFile FileName="RoleService1.wsdl" MetadataType="Wsdl" ID="88b18fd2-dfac-4f93-93fc-75e48b29e040" SourceId="1" SourceUrl="http://localhost:8012/BasicsServices/RoleService/?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
